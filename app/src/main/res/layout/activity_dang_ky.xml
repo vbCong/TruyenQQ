@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRL"
+    tools:context=".DangKy"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorToolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/Linear3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="9dp"
+        android:background="@color/colorRL"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/Linear4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorRL"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorFb"
+                android:gravity="center"
+                android:text="FACEBOOK"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorGg"
+                android:gravity="center"
+                android:text="GOOGLE"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorRL"
+            android:gravity="center"
+            android:text="Hoặc"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/ho"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:hint="@string/ho"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/ten"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:hint="@string/ten"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:hint="@string/email"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:hint="@string/username"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/matkhau"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:hint="@string/matkhau"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/xacnhanmk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/background_light"
+            android:hint="@string/xacnhanmk"/>
+        <Button
+            android:id="@+id/btnDK"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_light"
+            android:textSize="30dp"
+            android:hint="@string/dangky"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Bằng việc nhấn nút đăng ký bạn đã đồng ý với các điều khoản của chúng tôi"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

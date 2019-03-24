@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorToolbar"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:id="@+id/Linear1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/colorLinear3"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/linear2"
+            android:layout_weight="1"
+            android:text="Đọc Truyện"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="#0E0D0D" />
+
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear2"
+            android:layout_weight="1"
+            android:text="Nội Dung"
+            android:background="@android:color/holo_green_light"
+            android:textColor="#111010" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/linear2"
+            android:layout_weight="1"
+            android:text="Theo Dõi"
+            android:background="@android:color/holo_red_light"
+            android:textColor="#0E0D0D" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lisChuong"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="310dp"
+        android:background="@android:color/background_light"></ListView>
+</android.support.v4.widget.DrawerLayout>
