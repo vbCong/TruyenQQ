@@ -74,20 +74,6 @@
 
         <EditText
             android:layout_marginTop="10dp"
-            android:id="@+id/ho"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@android:color/background_light"
-            android:hint="@string/ho"/>
-        <EditText
-            android:layout_marginTop="10dp"
-            android:id="@+id/ten"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@android:color/background_light"
-            android:hint="@string/ten"/>
-        <EditText
-            android:layout_marginTop="10dp"
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="50dp"

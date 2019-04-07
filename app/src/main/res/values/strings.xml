@@ -12,8 +12,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="ho">Họ</string>
-    <string name="ten">Tên</string>
     <string name="email">Email</string>
     <string name="username">Username</string>
     <string name="matkhau">Mật khẩu</string>
