@@ -38,7 +38,7 @@ public class Truyen {
     int IDNguoiDung;
     String NgayDang;
 
-    public Truyen(int IDT, int IDtl, int IDUploader, String TenTruyen, String NgayDang){
+    public Truyen(int IDT, int IDtl, int IDNguoiDung, String TenTruyen, String NgayDang){
         super();
         this.IDT = IDT;
         this.IDtl = IDtl;
@@ -47,7 +47,7 @@ public class Truyen {
         this.NgayDang = NgayDang;
     }
 
-    public Truyen(int IDtl, int IDUploader, String TenTruyen, String NgayDang){
+    public Truyen(int IDtl, int IDNguoiDung,  String TenTruyen, String NgayDang){
         super();
         this.IDtl = IDtl;
         this.IDNguoiDung = IDNguoiDung;
@@ -75,7 +75,7 @@ public class Truyen {
         return IDNguoiDung;
     }
 
-    public void setIDUploader(int IDUploader){
+    public void setIDNguoiDung(int IDNguoiDung){
         this.IDNguoiDung = IDNguoiDung;
     }
 
