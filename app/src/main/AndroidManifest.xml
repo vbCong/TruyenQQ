@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".DangKy"></activity>
         <activity android:name=".Main2Activity" />
+        <activity android:name=".Main3Activity"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/myactivityname">
