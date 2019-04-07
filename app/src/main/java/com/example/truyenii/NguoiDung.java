@@ -5,24 +5,27 @@ public class NguoiDung {
     int IDNguoiDung;
     String TenDangNhap;
     String Email;
+    String Password;
     String NgayThamGia;
     int Level;
     int Status;
 
-    public NguoiDung(int IDNguoiDung, String TenDangNhap, String Email, String NgayThamGia, int Level, int Status){
+    public NguoiDung(int IDNguoiDung, String TenDangNhap, String Email, String Password, String NgayThamGia, int Level, int Status){
         super();
         this.IDNguoiDung = IDNguoiDung;
         this.TenDangNhap = TenDangNhap;
         this.Email = Email;
+        this.Password = Password;
         this.NgayThamGia = NgayThamGia;
         this.Level = Level;
         this. Status = Status;
     }
 
-    public NguoiDung(String TenDangNhap, String Email, String NgayThamGia, int Level, int Status){
+    public NguoiDung(String TenDangNhap, String Email, String Password, String NgayThamGia, int Level, int Status){
         super();
         this.TenDangNhap = TenDangNhap;
         this.Email = Email;
+        this.Password = Password;
         this.NgayThamGia = NgayThamGia;
         this.Level = Level;
         this. Status = Status;
@@ -52,6 +55,13 @@ public class NguoiDung {
         this.Email = Email;
     }
 
+    public String getPassword(){
+        return Password;
+    }
+
+    public void setPassword(String Password){
+        this.Password = Password;
+    }
     public String getNgayThamGia(){
         return NgayThamGia;
     }
